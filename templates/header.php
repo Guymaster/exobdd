@@ -6,8 +6,10 @@
         background-color: #4CAF50;
         color: white;
         text-align: center;
-        padding: 1em 0;
         font-size: 2em;
         font-weight: bold;
+        padding: 20px;
+        position: sticky;
+        top: 0;
     }
 </style>

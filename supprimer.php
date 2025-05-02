@@ -37,8 +37,6 @@
             echo $sql . "<br>". $error->getMessage();
         }
         ?>
-
-        <?php require "templates/header.php"; ?>
         <h2>Suppression d'utilisateur</h2>
 
         <?php if ($success) echo $success; ?>
@@ -54,7 +52,7 @@
                         <th>Age</th>
                         <th>Genre</th>
                         <th>Date</th>
-                        <th>Supprimer</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -67,7 +65,7 @@
                         <td><?php echo $row["age_uti"]; ?></td>
                         <td><?php echo $row["genre_uti"]; ?></td>
                         <td><?php echo $row["date"]; ?></td>
-                        <td><button type="submit" name="submit" value="<?php echo $row["id_uti"]; ?>">Supprimer</button></td>
+                        <td><button class="btn-danger" type="submit" name="submit" value="<?php echo $row["id_uti"]; ?>">Supprimer</button></td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>

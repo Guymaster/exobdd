@@ -32,7 +32,7 @@
                     <th>Age</th>
                     <th>Genre</th>
                     <th>Date</th>
-                    <th>Modifier</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -45,7 +45,7 @@
                     <td><?php echo $row["age_uti"]; ?></td>
                     <td><?php echo $row["genre_uti"]; ?></td>
                     <td><?php echo $row["date"]; ?></td>
-                    <td><a href="miseajour2.php?id_uti=<?php echo $row["id_uti"]; ?>">Modifier</a></td>
+                    <td><a class="btn-primary" href="miseajour2.php?id_uti=<?php echo $row["id_uti"]; ?>">Modifier</a></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
